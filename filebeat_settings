@@ -1,0 +1,20 @@
+1. geoip plugin
+ bin/elasticsearch-plugin install ingest-geoip 
+
+2. download and install filebeat
+- curl -L O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-6.5.4-amd64.deb
+- sudo dpkg -i filebeatt-6.5.4-amd64.deb
+
+3. configuration files 
+- /etc/filebeat/filebeat.yml  (must sudo)
+  - elastic settings 
+  - kibana settings 
+  
+4. sudo filebeat modules enable system
+
+5. sudo filebeat setup
+   --> configuration confirm. 
+   sudo service filebeat start
+   --> service start ! 
+   
+
