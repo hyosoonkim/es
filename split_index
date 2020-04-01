@@ -1,0 +1,6 @@
+POST /data_mart/_split/split-data_mart
+{
+  "settings": {
+    "index.number_of_shards": 1
+  }
+}
